@@ -24,7 +24,7 @@ Section:NewButton("ZxcCircles", " 'X' spam mode, 'Z' autoblock, 'C' circle", fun
 
 end)
 
-local Tab = Window:NewTab("Scripts")
+local Tab = Window:NewTab("Scripts/Hubs")
 
 local Section = Tab:NewSection("Blade Ball Scripts")
 
@@ -41,21 +41,21 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/lo
 	end)
 
     Section:NewButton("Era hub", "Era Script, key", function ()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Eblan19/875578/main/dolbaeb9867"))(
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Eblan19/875578/main/dolbaeb9867"))()
 	end)
 
-Section:NewButton("AlienWare Script", "AlienWare Script, key", function ()
+    Section:NewButton("AlienWare Script", "AlienWare Script, key", function ()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/romkich09/keySystem/main/mainKey'),true))()
 	end)
 
-Section:NewButton("NeReid Hub", "NeReid Script key (op autop)", function ()
+    Section:NewButton("NeReid Hub", "NeReid Script key (op autop)", function ()
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b964c4456aeff691784ffaaa181ab423.lua"))()
 	end)
 
-Section:NewButton("Bedol Hub", "Bedol Script, no key", function ()
+    Section:NewButton("Bedol Hub", "Bedol Script op, no key", function ()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/SourceLua/main/Blade_Ball.lua"))()
     end)
 
-ection:NewButton("Bedol Hub", "Bedol Script, key", function ()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+    Section:NewButton("Be Hub", "Bedol1 Script , no key ", function ()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/OfficialHi/AstroHub/main/Loader/Main.lua'))()
     end)
