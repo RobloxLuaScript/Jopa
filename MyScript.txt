@@ -7,19 +7,13 @@ local Window = Library.CreateLib("ZxcHub", "RJTheme3")
 local Tab = Window:NewTab("AutoParry")
 
 
-local Section = Tab:NewSection("Авто")
+local Section = Tab:NewSection("AutoParry")
 
-	Section:NewSlider("JumpPower", "JumpHack", 500, 0, function (s)
-		game:GetService("Workspace").Alive.Dead.MrToys22.Humanoid.JumpPower = s
-	end)
+Section:NewButton("AutoParry", "Normal AutoParry", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/AutoBlock"))()
+end)
 
-
-	Section:NewSlider("WalkSpeed", "SpeedHack", 500, 0, function (s)
-		game:GetService("Workspace").Alive.MrToys22.Humanoid.WalkSpeed = s
-	end)
-
-
-Section:NewButton("ZxcCircles", " 'X' spam mode, 'Z' autoblock, 'C' circle", function ()
+Section:NewButton("AutoParry V2", " 'X' spam mode, 'Z' autoblock, 'C' circle", function ()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/autoparrybest"))()
 
 end)
@@ -58,4 +52,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Sour
 
     Section:NewButton("Be Hub", "Bedol1 Script , no key ", function ()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/OfficialHi/AstroHub/main/Loader/Main.lua'))()
+    end)
+
+    Section:NewButton("Inferno Hub", "Inferno Script , no key ", function ()
+loadstring(game:HttpGet("https://github.com/SadlekAski/Scripts/raw/main/Blade%20Ball/Equip%20any%20ability.lua"))()
+    end)
+
+    Section:NewButton("V3 AutoParry", "Vector Script (op AutoP)ae , no key ", function ()
+loadstring(game:HttpGet("https://paste.gg/p/anonymous/42c468c6f0d94d6a86fc90caf7f0e897/files/9d3a059ff4064dc0b9efe621c774d175/raw"))()
     end)
