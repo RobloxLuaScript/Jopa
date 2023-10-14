@@ -1,0 +1,61 @@
+local player = game.Players.LocalPlayer
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("ZxcHub", "RJTheme3")
+
+local Tab = Window:NewTab("AutoParry")
+
+
+local Section = Tab:NewSection("Авто")
+
+	Section:NewSlider("JumpPower", "JumpHack", 500, 0, function (s)
+		game:GetService("Workspace").Alive.Dead.MrToys22.Humanoid.JumpPower = s
+	end)
+
+
+	Section:NewSlider("WalkSpeed", "SpeedHack", 500, 0, function (s)
+		game:GetService("Workspace").Alive.MrToys22.Humanoid.WalkSpeed = s
+	end)
+
+
+Section:NewButton("ZxcCircles", " 'X' spam mode, 'Z' autoblock, 'C' circle", function ()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/autoparrybest"))()
+
+end)
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Blade Ball Scripts")
+
+	Section:NewButton("ParseOP", "ParseOP Script, no key", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+	end)
+
+    Section:NewButton("Kingston", "Kingston Script", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Gos69/kingston/main/kingston_loader.lua"))()
+	end)
+
+    Section:NewButton("Nexus", "Nexus Script, no key", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+	end)
+
+    Section:NewButton("Era hub", "Era Script, key", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Eblan19/875578/main/dolbaeb9867"))(
+	end)
+
+Section:NewButton("AlienWare Script", "AlienWare Script, key", function ()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/romkich09/keySystem/main/mainKey'),true))()
+	end)
+
+Section:NewButton("NeReid Hub", "NeReid Script key (op autop)", function ()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b964c4456aeff691784ffaaa181ab423.lua"))()
+	end)
+
+Section:NewButton("Bedol Hub", "Bedol Script, no key", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/SourceLua/main/Blade_Ball.lua"))()
+    end)
+
+ection:NewButton("Bedol Hub", "Bedol Script, key", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Omgshit/Scripts/main/MainLoader.lua"))()
+    end)
