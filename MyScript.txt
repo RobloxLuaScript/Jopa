@@ -83,6 +83,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scrip
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 
+	Section:NewButton("FE Scripts", "FE Scripts",  function ()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
+	end)
+
 local Tab = Window:NewTab("Misc")
 
 local Section = Tab:NewSection("Options")
@@ -107,6 +111,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/
 loadstring(game:HttpGet("https://pastebin.com/raw/AbDM2er1"))()
 	end)
 
-	Section:NewButton("Test No USE!!", "Fov Changer for any game", function ()
-loadstring(game:HttpGet("https://pastebin.com/raw/AVcnr3fe"))()
-	end)
+Section:NewToggle("Infinity Jump", "Infinity Jump For any game", function(state)
+    if state then
+    loadstring(game:GetHttp("https://pastebin.com/raw/GVcPMnQX"))()
+    else
+    loadstring(game:GetHttp("https://github.com/RobloxLuaScript/InfJump-Roblox/blob/main/bob.txt"))()
+    end
+end)
